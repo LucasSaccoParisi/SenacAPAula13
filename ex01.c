@@ -21,3 +21,24 @@ int main(){
 // 9 9 9 
 // 9 9 9 
 // 9 9 9 
+
+
+// correção:
+
+#include <stdio.h>
+
+int main(){
+    int m[3][3];
+
+    m[1][1] = 9;
+    
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            m[i][j] = 2;
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
